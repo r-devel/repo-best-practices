@@ -23,10 +23,13 @@ See also [GitHub's guide to repo best practices](https://docs.github.com/en/repo
 - Securing the repo
     - Dependabot alerts
     - Secret scanning
-    - Push protection
-    - Code scanning
+    - Protect main branch (disallow non-maintainers to push to, or delete main branch)[^1][^2]
+    - Code scanning[^1][^2]
     See [GitHub's guide to repo best practices](https://docs.github.com/en/repositories/creating-and-managing-repositories/best-practices-for-repositories) and [GitHub's security Quickstart guide](https://docs.github.com/en/code-security/getting-started/quickstart-for-securing-your-repository) for more details
 - Website or homepage URL
+
+[^1]: Enforced by applying [`rulesets/protect_main_branch_essential.json`](rulesets/protect_main_branch_essential.json)
+[^2]: Enforced by applying [`rulesets/protect_main_branch_advised.json`](rulesets/protect_main_branch_advised.json)
 
 ## Advisable best practices (nice to have at maintainer's discretion)
 
@@ -34,7 +37,11 @@ See also [GitHub's guide to repo best practices](https://docs.github.com/en/repo
 - Issue labels
 - [All Contributors](https://allcontributors.org/)
 - [CITATION.cff](https://citation-file-format.github.io/)
-- [Branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches)
+- [Branch protection (admins/maintainers can bypass)](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches)[^2]
+    - Disallow pushing to or deleting main branch
+    - Require at least one approving review of PRs from a CODEOWNER
+    - Require linear history (squash/rebase)
+    - Disallow force pushes
 - [Repository topics](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics) 
 
 ## Repo-specific considerations
