@@ -17,6 +17,8 @@ See also [GitHub's guide to repo best practices](https://docs.github.com/en/repo
 - LICENSE.md
     - Make sure this is appropriate for the repo (see https://choosealicense.com/)
         - (Could consider making recommendations for different project types)
+- .gitignore
+    -  A standard .gitignore including basics for R & quarto 
 - CODE_OF_CONDUCT.md
     - Create one for the r-devel org as a whole - see https://github.com/r-devel/repo-best-practices/issues/2
 - [CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) file
