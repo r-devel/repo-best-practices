@@ -37,7 +37,7 @@ See also [GitHub's guide to repo best practices](https://docs.github.com/en/repo
 
 - [Issue and PR templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates)
 - Issue labels
-- [All Contributors](https://allcontributors.org/)
+- [All Contributors](https://allcontributors.org/) - rOpenSci have developed an R package called [{allcontributors}](https://github.com/ropensci/allcontributors)
 - [CITATION.cff](https://citation-file-format.github.io/)
 - [Branch protection (admins/maintainers can bypass)](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches)[^2]
     - Disallow pushing to or deleting main branch
@@ -73,7 +73,7 @@ website:
 - Release strategy, e.g. semantic versioning, release notes, deployment process
 
 ### Further considerations
-- pre-commit hooks
+- pre-commit hooks using the [{precommit}](https://github.com/lorenzwalthert/precommit) package
     - Which would be useful for which type of project?
 
 
