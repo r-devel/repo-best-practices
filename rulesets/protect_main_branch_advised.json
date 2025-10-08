@@ -1,5 +1,5 @@
 {
-  "id": 8715903,
+  "id": 8716673,
   "name": "Protect main branch (advised)",
   "target": "branch",
   "source_type": "Repository",
@@ -15,7 +15,13 @@
   },
   "rules": [
     {
+      "type": "deletion"
+    },
+    {
       "type": "non_fast_forward"
+    },
+    {
+      "type": "update"
     },
     {
       "type": "required_linear_history"
